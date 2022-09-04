@@ -435,8 +435,7 @@ h1 h2 h3 h4 h5 h6{
    color: #4F5665;
 }
 .block__map{
-
-   padding: 155px 190px 35px 190px;
+   padding: 190px 155px 190px 155px;
 }
 .map{
    width: 1060px;
