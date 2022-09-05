@@ -435,11 +435,12 @@ h1 h2 h3 h4 h5 h6{
    color: #4F5665;
 }
 .block__map{
-   padding: 190px 155px 190px 155px;
+   padding: 100px 70px 100px 70px;
 }
 .map{
    width: 1060px;
    height: 537px;
+   padding: 50px 40px 50px 40px;
 }
 .sponsored{
    width: 1135px;
