@@ -163,16 +163,24 @@ h1 h2 h3 h4 h5 h6{
 
 .info__block{
    padding-right: 100px;
-   padding-top: 67px;
+   height: 190px;
 }
 .info__items{
    display: flex;
-   justify-content: center;
+   height: 190px;
+}
+
+.info_block_img{
+   display: flex;
+   height: 120px;
+   padding-top: 60px;
 }
 .vl{
    width: 0;
    height: 125px;
    border: 1px solid #EEEFF2;
+   display: flex;
+   align-self: center;
 }
 .info__img{
    width: 55px;
@@ -181,6 +189,7 @@ h1 h2 h3 h4 h5 h6{
 .info__text{  
    padding-left: 36px;
    padding-right: 120px;
+   
 }
 .info__title{
    font-weight: 700;
@@ -440,4 +449,7 @@ h1 h2 h3 h4 h5 h6{
 }
 /*section network end*/
 
+/*section slider*/
 
+
+/*section slider end*/
