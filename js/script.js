@@ -1,3 +1,7 @@
 $(document).ready(function(){
-  $('.slider').slick();
+  $('.slider').slick({
+    arrow:true,
+    dots:true,
+    slidesToShow:3,
+  });
 });

@@ -478,20 +478,21 @@ h1 h2 h3 h4 h5 h6{
 .slider{
    padding-top: 60px;
    padding-left: 50px;
-   width: 1200px;
+   width: 1300px;
+   position: relative;
 
 }
 .slider__items{
    box-sizing: border-box;
-   width: 400px;
-   height: 230px;
-   border: 2px solid #DDDDDD;
+   border: 1px solid #f0f0f0;
    border-radius: 10px;
-}
+   margin: 0 0 0 20px;
+   width: 380px;}
+
 .slider__block{
    display: flex;
-   justify-content: center;
-   padding: 30px  30px 0 30px;
+   justify-content: start;
+   padding: 30px  30px 30px 30px;
    height: 100%;
    
 }
@@ -503,10 +504,12 @@ h1 h2 h3 h4 h5 h6{
 .slider_text{
    display: flex;
    justify-content: center;
+   height: 16px;
    padding-left: 20px;
 }
 .name__block{
-
+   width: 140px;
+   height: 50px;
 }
 .fb__name{
 font-weight: 500;
@@ -514,6 +517,8 @@ font-size: 18px;
 line-height: 30px;
 color: #0B132A;
 height: 20px;
+font-family: 'Rubik';
+font-style: normal;
 }
 .fb__location{
 font-weight: 400;
@@ -521,12 +526,14 @@ font-size: 14px;
 line-height: 30px;
 color: #4F5665;
 height: 30px;
+font-family: 'Rubik';
+font-style: normal;
 }
 .rate__block{
    display: flex;
    justify-content: center;
    height: 16px;
-   padding-left: 100px;
+   padding-left: 50px;
 }
 .rate{
  font-weight: 400;
@@ -537,29 +544,30 @@ height: 30px;
  color: #0B132A;
  padding-right: 10px;
  height: 51px;
+ font-family: 'Rubik';
+ font-style: normal;
 
 }
 .rate__star{
  width: 16px;
  height: 51px;
 }
-.comment_block{
-   display: flex;
-align-items: center;
-}
 .comment{
 font-weight: 400;
 font-size: 16px;
 line-height: 30px;
-
+font-family: 'Rubik';
+font-style: normal;
 color: #0B132A;
 padding: 18px 30px 30px 30px;
+height: 170px;
 }
 /*слайдер*/
 .slick-slider{
 
 }
 .slick-list{
+   overflow: hidden;
 
 }
 .slick-track{
@@ -585,12 +593,7 @@ padding: 18px 30px 30px 30px;
 .slick-arrow{
 
 }
-.slick-arrow.slick-prev{
 
-}
-.slick-arrow.slick-next{
-
-}
 .slick-arrow.slick-disabled{
 
 }
@@ -604,5 +607,74 @@ padding: 18px 30px 30px 30px;
 .slick-dots button{
 
 }
+/*конкреный слайдер*/
 
-/*section slider end*/
+.slick-arrow.slick-prev{
+   position: absolute;
+   z-index: 100;
+   top: 90%;
+   left:90%;
+   box-shadow: 0px 14px 44px rgb(14 20 34 / 8%);
+   width: 60px;
+   height: 60px;
+   padding: 10px;
+   text-align: center;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 50%;
+   font-size: 0;
+   border: 2px solid #F53838;
+   background: url(./img/Icon/Vector.svg) 15px 15px  /50%  no-repeat;
+}
+
+.slick-arrow.slick-next{
+   position: absolute;
+   top: 90%;
+   left: 97%;
+   box-shadow: 0px 14px 44px rgb(14 20 34 / 8%);
+   width: 60px;
+   height: 60px;
+   padding: 10px;
+   text-align: center;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 50%;
+   font-size: 0;
+   border: 2px solid #F53838;
+   background: url(./img/Icon/Vector\ right.svg) 15px 15px  /50%  no-repeat ;
+   
+}
+
+.slick-arrow.slick-next:hover{
+   border: #F53838;
+   image: url(./img/Icon/eva_arrow-back-fill.png) 15px 15px  /50%  no-repeat ;
+}
+.slick-arrow.slick-prev:hover{
+   border: #F53838;
+   image: url(./img/Icon/eva_arrow-back-fill.png) 15px 15px  /50%  no-repeat ;
+}
+.slick-dots{
+display: flex;
+justify-content: start;
+padding-top: 40px;
+}
+.slick-dots li {
+   list-style: none;
+   margin: 0 15px ;
+}
+.slick-dots button{
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #DDE0E4;
+  border-radius: 50%;
+  border: none;
+}
+.slick-dots li.slick-active button{
+   width: 45px;
+   height: 15px; 
+   border-radius: 10px 10px 10px 10px;
+   background-color: #F53838;
+}
