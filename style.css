@@ -19,7 +19,9 @@ time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
+   
 }
+
 .body{
     font-family: 'Rubik', sans-serif;
     margin: 0;
@@ -33,15 +35,26 @@ h1 h2 h3 h4 h5 h6{
 }
 /*header start*/
 .header__wrapper{
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   height: 100px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   
+   -webkit-box-pack: justify;
+   
+       -ms-flex-pack: justify;
+   
+           justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 .header__block{
    width: 20%;
 }
 .nav{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
 }
 .nav__link{
@@ -93,6 +106,10 @@ h1 h2 h3 h4 h5 h6{
 /*intro start*/
 .intro__content{
    display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
    justify-content: space-between;
    padding-top: 90px;
 }
@@ -152,6 +169,10 @@ h1 h2 h3 h4 h5 h6{
    border-radius: 10px;
 }
 .info__wrapper__bg{
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;
    display: flex;
    padding-left: 105px;
    background: white;
@@ -167,11 +188,19 @@ h1 h2 h3 h4 h5 h6{
 }
 .info__items{
    display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;
    height: 100%;
 }
 
 .info_block_img{
    display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;
    height: 120px;
    padding-top: 60px;
 }
@@ -180,6 +209,10 @@ h1 h2 h3 h4 h5 h6{
    height: 125px;
    border: 1px solid #EEEFF2;
    display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;
    align-self: center;
 }
 .info__img{
@@ -212,6 +245,10 @@ h1 h2 h3 h4 h5 h6{
 }
 .block{
    display: flex;
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;
    justify-content: space-between;
 }
 .block__img{
@@ -246,7 +283,12 @@ h1 h2 h3 h4 h5 h6{
 }
 .block__text_icon{
   display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   justify-content: start;
+  -webkit justify-content: start;
   height: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -366,6 +408,7 @@ h1 h2 h3 h4 h5 h6{
   height: 45px;   
   border: 2px solid #F53838;
   border-radius: 50px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
